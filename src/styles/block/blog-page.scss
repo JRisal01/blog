@@ -1,0 +1,10 @@
+.blog-page{
+    width: 940px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    @media #{$ipad} {
+        flex-direction: column-reverse;
+        width: auto;
+    }
+}

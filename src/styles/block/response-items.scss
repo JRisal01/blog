@@ -1,0 +1,69 @@
+.response-items {
+    
+}
+
+.response-item__wrapper {
+    display: flex;
+    // justify-content: center;
+    justify-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.response__reply {
+    margin-left: 60px;
+}
+
+.response__info {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.response__name {
+    font-family: $ff-secondary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: $c-text;
+    margin-bottom: 2px;
+}
+
+.response__time {
+    font-family: $ff-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: $c-text;
+    margin-bottom: 7px;
+}
+
+.response__message {
+    width: 580px;
+    font-family: $ff-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: $c-text;
+    margin-bottom: 14px;
+    @media #{$tablet} {
+        width: auto;
+    }
+}
+
+.response__reply-link {
+    text-decoration: none;
+    font-family: $ff-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $c-text;
+
+    .underline {
+        padding-bottom: 9px;
+        border-bottom: 2px solid $c-under;
+    }
+
+}

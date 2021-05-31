@@ -1,0 +1,87 @@
+// Shortcuts
+// $c- = Colors
+// $cf- = Color for Forms
+// $cb- = Color for Buttons
+// $ff- = Font Family
+// $lh = Line Height
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+
+    //Style Colors
+    --screen: #E1E8EE;
+    --hr: #cccccc;
+    --text-screen: #0091FF;
+}
+
+// Basic Colors & Styles
+$c-black: #000000;
+$c-white:  #ffffff;
+$c-red: #FF0000;
+$c-screen: var(--screen);
+$c-hr: var(--hr);
+$c-text-screen: var(--text-screen);
+$c-under : #57B94A;
+
+// Text & Background Colors
+$c-text: #151717;
+$c-background: var(--white);
+
+// Button Colors
+$cb-background:  #0091FF;
+$cb-border: #ccc;
+$cb-border-hover: #ccc;
+$cb-border-focus: #ccc;
+$cb-border-input: #ccc;
+
+// Project Colors
+$c-brand: #006AAB;
+$c-primary: #F8E71C;
+$c-secondary: #001421;
+
+// Links
+$c-link:  #1983D4;
+$c-link-hover: darken($c-link, 20%);
+$c-link-visited: lighten($c-link, 20%);
+
+// Forms
+$cf-input: #ffffff;
+$cf-input-hover: #666666;
+$cf-input-focus: #ffffff;
+
+$cf-text: #ccc;
+$cf-text-focus: #111111;
+$cf-placeholder: #666666;
+
+$cf-border: #ccc;
+$cf-border-hover: #333333;
+$cf-border-focus: #111111;
+
+// Fonts
+$ff-alt: 'Oswald', sans-serif;
+$ff-primary: 'Lora', serif;
+$ff-secondary: 'Roboto', sans-serif;;
+$ff-default: $ff-primary;
+
+// Typography
+$lh-body: 1.6;
+$ff-code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$ff-pre: "Courier 10 Pitch", Courier, monospace;
+
+// Media Queries
+$container: 660px;
+$medium-width: 1200px;
+$tablet-width: 768px;
+$phone-width: 640px;
+$phone-portrait-width: 567px;
+$header-width: 920px;
+$ipad-width: 1024px;
+
+$desktop: 'screen and (max-width: #{$container})';
+$medium-screen: 'screen and (max-width: #{$medium-width})';
+$ipad: 'screen and (max-width: #{$ipad-width})';
+$tablet: 'screen and (max-width: #{$tablet-width})';
+$phone: 'screen and (max-width: #{$phone-width})';
+$phone-portrait: 'screen and (max-width: #{$phone-portrait-width})';
+$header: 'screen and (max-width: #{$header-width})';

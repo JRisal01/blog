@@ -1,0 +1,10 @@
+.comment{
+    width: 100%;
+}
+.comment__wrapper{
+    width: 700px;
+    margin: auto;
+    @media #{$tablet} {
+        width: 100%;
+    }
+}

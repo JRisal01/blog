@@ -1,0 +1,419 @@
+.blog {
+    width: 100%;
+    margin-top: 120px;
+    @media #{$desktop} {
+        margin-top: 50px;
+    }
+}
+
+
+
+.blog__title {
+    width: 640px;
+    margin: auto;
+    font-family: $ff-alt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 84px;
+    line-height: 92px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: $c-text;
+    margin-bottom: 20px;
+    @media #{$desktop} {
+        width: 95%;
+        margin: auto;
+        font-size: 52px;
+        line-height: 60px;
+    }
+    @media #{$phone-portrait} {
+        width: 100%;
+        font-size: 42px;
+        line-height: 50px;
+    }
+    
+}
+
+.blog__sub-title {
+    width: 640px;
+    margin: auto;
+    font-family: $ff-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: $c-text;
+    margin-bottom: 38px;
+
+    .underline {
+        border-bottom: 1px solid $c-under;
+    }
+    @media #{$desktop} {
+        width: 95%;
+        margin: auto;
+    }
+    @media #{$phone-portrait} {
+        font-size: 12px;
+    }
+}
+
+.blog__discription {
+    width: 640px;
+    margin: auto;
+    font-family: $ff-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: $c-text;
+    margin-bottom: 30px;
+    @media #{$desktop} {
+        width: 95%;
+        margin: auto;
+    }
+    @media #{$phone-portrait} {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+.blog__discription--drop-caps:first-letter {
+    font-family: $ff-alt;
+    float: left;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 84px;
+    line-height: 84px;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: $c-text;
+    margin-right: 17px;
+}
+
+.blog__image-caption {
+    text-align: center;
+}
+
+.blog__figure {
+    width: 640px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    @media #{$ipad} {
+        display: block;
+        width: 100%;
+        .blog__image{
+            width: 100%;
+        }
+    }
+}
+
+.blog__figure--width{
+    margin: auto;
+    width: 940px;
+}
+
+.blog__figure--margin{
+    margin-bottom: 30px;
+}
+
+.blog__quote {
+    width: 640px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$desktop} {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.blog__quote-figure {
+    font-family: $ff-alt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 126px;
+    color: $c-under
+}
+
+.blog__quote-discription {
+    font-family: $ff-alt;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -1.5px;
+    color: $c-text;
+    margin-top: -80px;
+    @media #{$desktop} {
+        font-size: 42px;
+        line-height: 52px;
+    }
+    @media #{$phone-portrait} {
+        width: 100%;
+        font-size: 32px;
+        line-height: 50px;
+    }
+}
+
+.paragraph__column {
+    width: 640px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    @media #{$desktop} {
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+}
+
+.blog__discription--widthT {
+    width: 340px;
+    @media #{$desktop} {
+        width: 100%;
+    }
+}
+
+.blog__discription--width {
+    width: 280px;
+    @media #{$desktop} {
+        width: 100%;
+    }
+}
+
+.blog__secondary-quote {
+    width: 640px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: normal;
+    opacity: 0.48;
+    @media #{$desktop} {
+        width: 100%;
+    }
+}
+
+.blog__secondary-quote__figure {
+    font-family: $ff-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 84px;
+    color: #57B94A;
+    margin-right: 18px;
+}
+
+.blog__secondary-quote__discription {
+    font-family: $ff-primary;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: -0.6px;
+    color: $c-text;
+    margin-bottom: 25px;
+}
+
+.blog__secondary-quote__name {
+    font-family: $ff-primary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: $c-text;
+    margin-bottom: 60px;
+}
+
+.blog__gallery {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    row-gap: 5px;
+    @media #{$medium-screen} {
+        justify-content: space-evenly;
+        grid-template-columns: auto auto auto auto auto auto;
+        row-gap: 10px;
+    }
+    @media #{$ipad} {
+        justify-content: space-evenly;
+        grid-template-columns: auto auto auto auto auto;
+        row-gap: 10px;
+    }
+    @media #{$tablet} {
+        justify-content: space-evenly;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 10px;
+    }
+
+    @media #{$phone} {
+        justify-content: space-evenly;
+        grid-template-columns: auto auto auto;
+        row-gap: 10px;
+    }
+    @media #{$phone-portrait} {
+        justify-content: space-evenly;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+}
+
+.blog__heading {
+    width: 640px;
+    margin: auto;
+    @media #{$desktop} {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+.blog__heading-info {
+    font-family: $ff-alt;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $c-text;
+    margin-bottom: 30px;
+}
+
+.blog__heading-one {
+    font-size: 84px;
+    line-height: 92px;
+    letter-spacing: -3px;
+    @media #{$desktop} {
+        font-size: 72px;
+        line-height: 82px;
+    }
+    @media #{$phone-portrait} {
+        font-size: 42px;
+        line-height: 50px;
+    }
+}
+
+.blog__heading-two {
+    font-size: 52px;
+    line-height: 58px;
+    letter-spacing: -2px;
+    @media #{$desktop} {
+        font-size: 48px;
+        line-height: 52px;
+    }
+    @media #{$phone-portrait} {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+.blog__heading-three {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -1px;
+    @media #{$desktop} {
+        font-size: 28px;
+    }
+}
+
+.blog__heading-four {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -1px;
+}
+
+.blog__heading-five {
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+}
+
+.blog__heading-six {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+}
+
+.blog__cover {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 600px;
+    background-image: url('../src/images/cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog__cover-info {
+    text-align: center;
+    font-family: $ff-alt;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    color: $c-white;
+}
+
+.blog__image-text {
+    width: 640px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+    @media #{$desktop} {
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+    
+
+    .blog__image {
+        margin-right: 30px;
+        @media #{$desktop} {
+            margin-right: 0px;
+        }
+    }
+
+    .blog__discription {
+        font-family: $ff-primary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: $c-text;
+    }
+}
+
+.blog__image-text--reverse{
+    margin-bottom: 60px;
+    flex-direction: row-reverse;
+    .blog__image{
+        margin-left: 30px;
+        margin-right: 0px;
+        @media #{$desktop} {
+            margin-left: 0px;
+        }
+    }
+    @media #{$desktop} {
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+}
+
+.blog__line{
+    width: 740px;
+    margin: auto;
+    margin-bottom: 60px;
+    @media #{$tablet} {
+        width: 100%;
+    }
+}

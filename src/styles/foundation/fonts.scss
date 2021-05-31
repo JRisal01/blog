@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+/*
+Usage
+===============
+Define Font name in variable and specify here.
+@include fontFace('$font-variable', FontNameInPath, '/path');
+*/
+
+/*@font-face {*/
+/*   font-family: 'circularstd_book';*/
+/*   src: url('assets/fonts/circularstd_book.woff2') format('woff2'),*/
+/*   url('assets/fonts/circularstd_book.woff') format('woff');*/
+/*   font-weight: normal;*/
+/*   font-style: normal;*/
+/*}*/

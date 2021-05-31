@@ -1,0 +1,15 @@
+.gallery{
+    width: 640px;
+    margin: auto;
+    padding: 0px 20px 0px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 4px;
+    @media #{$phone} {
+        margin: auto;
+        width: 100%;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+}

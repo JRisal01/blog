@@ -1,0 +1,7 @@
+.content{
+    width: 640px;
+    @media #{$ipad} {
+        width: 100%;
+
+    }
+}
